@@ -20,7 +20,9 @@ npm install
 
 The component requires 2 properties, language (String) and date (String, all required type conversion is handled inside the component). The language property specifies which programming language the component will display the 3 most popular repositories for. The date property by default is set to the current date of running the application, the API will return the most 'starred' repositories in the specified language that have been created 1 month prior to this date.
 
+````
 <GithubTop language="JavaScript" :date="date"/>
+````
 
 ### Serve the application
 
