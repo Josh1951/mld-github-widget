@@ -4,8 +4,8 @@ Visit https://dry-headland-69832.herokuapp.com/ to view a demo of the component.
 
 ## Installation
 #### Requirements
-Node.js version 8.10.0
-NPM version 6.13.7
+-Node.js version 8.10.0
+-NPM version 6.13.7
 
 Using git clone the repository, or download and unzip the project files.
 In the terminal/command line navigate to the root directory of the project files '/mld-github-challenge'.
