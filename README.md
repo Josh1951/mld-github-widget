@@ -27,7 +27,7 @@ The component requires 2 properties, language (String) and date (String, all req
 ### Serve the application
 
 In the root directory run the command below to start the server.
-Open link displayed in terminal in your chosen web browser, alternatively manually 
+Open link displayed in terminal in your chosen web browser.
 ```
 npm run serve
 ```
