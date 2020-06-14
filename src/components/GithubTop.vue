@@ -10,6 +10,10 @@
             Results may be incomplete, please refresh the page.
         </div>
 
+        <div v-if="error !== '' " class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+
         <!--Loop over each object in repositories array-->
         <div v-for="repository in repositories">
             <!--Template for each repository-->
@@ -45,7 +49,8 @@
         //Component data
         data: function () {
             return {
-                hasError: false,
+                incompleteResults: false,
+                error: '',
                 repositories: [],
                 url: `${githubApi}q=language:${this.language}+created:%3E=${format(subMonths(parseISO(this.date), 1), 'yyyy-MM-dd')}&per_page=3&sort=stars&order=desc`
             }
@@ -59,14 +64,14 @@
                     .then(response => {
                         if (response.data.incomplete_results === true) {
                             //Display error box
-                            this.hasError = true;
+                            this.incompleteResults = true;
                         } else {
                             //Populate repositories array with relevant results
                             this.repositories = response.data.items;
                         }
                     }).catch(error => {
                         //Display error
-                        this.hasError=true;
+                        this.error=(error);
                         console.log(error);
                 });
             },
