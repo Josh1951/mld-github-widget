@@ -3,7 +3,7 @@ A component that displays the three most starred GitHub repos for a given langua
 Visit https://dry-headland-69832.herokuapp.com/ to view a demo of the component.
 
 ## Installation
-####Requirements
+#### Requirements
 Node.js version 8.10.0
 NPM version 6.13.7
 
