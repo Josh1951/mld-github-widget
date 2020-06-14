@@ -6,7 +6,7 @@
         </div>
 
         <!--Display error if incomplete results or other error -->
-        <div v-if="error" class="alert alert-danger" role="alert">
+        <div v-if="incompleteResults" class="alert alert-danger" role="alert">
             Results may be incomplete, please refresh the page.
         </div>
 
