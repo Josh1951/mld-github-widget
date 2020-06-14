@@ -42,6 +42,6 @@ npm run build
 
 ### API limitations
 
-The github API the component uses limits you to make up to 10 requests per minute, should you exceed this limit and error message will display on the component.
+The github API the component uses limits you to make up to 10 requests per minute, should you exceed this limit an error message will display on the component.
 
 In order to keep the API available to all users, Github has limited the amount of time a request can take to complete, if the request exceeds the limit before finiding all results the response may return 'incomplete_results', in this instance the component will display an error.
